@@ -4,10 +4,10 @@
 // - extern variable definitions
 // In the appropriate section
 
-#ifndef _PiscaPisca_H_
-#define _PiscaPisca_H_
+#ifndef _BlinkingTest_H_
+#define _BlinkingTest_H_
 #include "Arduino.h"
-//add your includes for the project PiscaPisca here
+//add your includes for the project BlinkingTest here
 
 
 //end of add your includes here
@@ -20,10 +20,10 @@ void setup();
 } // extern "C"
 #endif
 
-//add your function definitions for the project PiscaPisca here
+//add your function definitions for the project BlinkingTest here
 
 
 
 
 //Do not add code below this line
-#endif /* _PiscaPisca_H_ */
+#endif /* _BlinkingTest_H_ */

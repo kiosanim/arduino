@@ -1,9 +1,9 @@
 // Do not remove the include below
-#include "PiscaPisca.h"
+#include "BlinkingTest.h"
 
 const int pinLed = 13;
 
-static int i = 0;
+static int cont = 0;
 
 //The setup function is called once at startup of the sketch
 void setup()
@@ -17,9 +17,10 @@ void setup()
 void loop()
 {
 	digitalWrite(pinLed, HIGH);
-	Serial.print("Piscada: ");
-	Serial.println(i++);
+	Serial.print("Piscando: ");
+	Serial.println(cont++);
 	delay(1000);
+
 	digitalWrite(pinLed, LOW);
 	delay(1000);
 
