@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#index.jsp" PATH="/index.jsp"
+  SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#index.jsp:0" NAME="item" PATH="/index.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="LAMPADA_LIGADA::#WEB-INF#result#acesa.jsp"
+    NAME="output" PATH="/WEB-INF/result/acesa.jsp"
+    TARGET="rules:#WEB-INF#result#acesa.jsp" TITLE="LAMPADA_LIGADA" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="LAMPADA_DESLIGADA::#WEB-INF#result#apagada.jsp" NAME="output1"
+    PATH="/WEB-INF/result/apagada.jsp"
+    TARGET="rules:#WEB-INF#result#apagada.jsp" TITLE="LAMPADA_DESLIGADA" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#WEB-INF#result#acesa.jsp"
+  PATH="/WEB-INF/result/acesa.jsp" SHAPE="256,145,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#WEB-INF#result#apagada.jsp"
+  PATH="/WEB-INF/result/apagada.jsp" SHAPE="256,289,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>
