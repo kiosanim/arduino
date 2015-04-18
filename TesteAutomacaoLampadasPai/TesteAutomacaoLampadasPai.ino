@@ -12,6 +12,8 @@ const int pinRele = 6;
 //Variavel temporaria
 int buttonState = 0;
 
+int javaState = 0;
+
 //Status
 int status = 0;
 
@@ -43,6 +45,19 @@ void loop()
 
 	}
 
+	if (Serial.available()) {
+
+		javaState = Serial.read();
+		if (javaState == HIGH) {
+			status = !status;
+			digitalWrite(pinRele, !status);
+		} else {
+			status = !status;
+			digitalWrite(pinRele, !status);
+		}
+
+
+	}
 
 	delay(1000);
 
